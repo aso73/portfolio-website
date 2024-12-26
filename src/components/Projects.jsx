@@ -56,11 +56,6 @@ const Projects = () => {
         {
           pro.map((pro) => (
             <motion.div 
-            ref={ref}
-            initial={{opacity:0,scale:0.8}}
-            animate={inView?{opacity:1,scale:1}:{opacity:0,scale:0.8}}
-            transition={{delay: (pro.id) * 0.2,  duration:0.5}}
-
             className='bg-gray-900 shadow-lg rounded-lg overflow-hidden'
             key={pro.id}>
 
